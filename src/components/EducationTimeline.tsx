@@ -9,7 +9,7 @@ const educationData = [
         location: "Potsdam, Germany",
         period: "2024 - 2027 (Expected)",
         gpa: "",
-        thesis: "Efficient Neural Architecture Search for Resource-Constrained Environments",
+        thesis: "Vision-Language Modeling for Detail-Rich Content",
         advisor: "Prof. Gerard de Melo",
         coursework: [""],
         achievements: ["HPI Research Grant", "HPI-MIT Grant: Design for Sustainability"]

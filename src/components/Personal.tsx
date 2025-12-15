@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const personalInfo = {
     location: "Potsdam, Germany",
-    languages: ["English (Fluend)", "German (Fluent)", "Russian (Native)", "Italian (Learning, B1)"],
+    languages: ["English (Fluent)", "German (Fluent)", "Russian (Native)", "Italian (Learning, B1)"],
     interests: [
         {
             category: "Sports",
