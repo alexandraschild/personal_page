@@ -7,6 +7,7 @@ import { useState } from "react";
 const personalInfo = {
     location: "Potsdam, Germany",
     languages: ["English (Fluent)", "German (Fluent)", "Russian (Native)", "Italian (Learning, B1)"],
+    programming: ["Python (Pytorch, Transformers)", "JavaScript/TypeScript (React, Node.js)", "SQL", "R", "C++"],
     interests: [
         {
             category: "Sports",
@@ -18,7 +19,7 @@ const personalInfo = {
 const hobbies = [
     {
         icon: <CookingPot className="w-5 h-5" />,
-        title: "Cooking & Eating",
+        title: "Cooking & Eating:)",
         description: "I really love creating and eating tasty food. For me that's a way to explore new cultures, socialize, show love and care for others. I really love middle eastern cuisine, but also love exploring and experimenting with new ingredients."
     },
     {
@@ -101,7 +102,16 @@ const PersonalSection = () => {
                                         ))}
                                     </div>
                                 </div>
-
+                                <div>
+                                    <h4 className="font-semibold mb-2">Programming</h4>
+                                    <div className="space-y-1">
+                                        {personalInfo.programming.map((lang, idx) => (
+                                            <Badge key={idx} variant="outline" className="text-xs">
+                                                {lang}
+                                            </Badge>
+                                        ))}
+                                    </div>
+                                </div>
                                 <div>
                                     <h4 className="font-semibold mb-3">Interests</h4>
                                     <div className="space-y-3">
